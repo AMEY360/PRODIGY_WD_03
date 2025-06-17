@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Advanced</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Tic-Tac-Toe</h1>
+
+    <div id="mode-selection">
+        <button id="pvp">Player vs Player</button>
+        <button id="pvai">Player vs AI</button>
+    </div>
+
+    <div id="difficulty-selection" style="display: none;">
+        <label>Select Difficulty:</label>
+        <button id="easy">Easy</button>
+        <button id="hard">Hard</button>
+    </div>
+
+    <div id="scoreboard">
+        <p>Player X: <span id="scoreX">0</span></p>
+        <p id="playerOScore">Player O: <span id="scoreO">0</span></p>
+        <p>Draws: <span id="scoreDraw">0</span></p>
+    </div>
+
+    <div id="game">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+    </div>
+
+    <button id="reset">Reset Game</button>
+    <h2 id="status"></h2>
+
+    <script src="script.js"></script>
+</body>
+</html>
